@@ -44,7 +44,7 @@ If you want to fix some data and raise a pull request
 | `emoji`           | `varchar(191) COLLATE utf8mb4_unicode_ci DEFAULT NULL`                    | |
 | `emojiU`          | `varchar(191) COLLATE utf8mb4_unicode_ci DEFAULT NULL`                    | |
 | `created_at`      | `timestamp NULL DEFAULT NULL`                                             | |
-| `updated_at`      | `timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP | |
+| `updated_at`      | `timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP` | |
 | `flag`            | `tinyint(1) NOT NULL DEFAULT '1'`                                         | |
 | `wikiDataId`      | `varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL COMMENT`            | |
 
@@ -73,12 +73,12 @@ If you want to fix some data and raise a pull request
 | `name`          | `varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL`                         | The name of the city                                   |
 | `state_id`      | `mediumint(8) unsigned NOT NULL` (foreign key)                             | The ID of the state in which the city is located       |
 | `state_code`    | `varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL`                         | |
-| `country_id`    | `mediumint(8) unsigned NOT NULL`. (foreign key)                            | The ID of the country in which the city is located     |
+| `country_id`    | `mediumint(8) unsigned NOT NULL` (foreign key)                             | The ID of the country in which the city is located     |
 | `country_code`  | `char(2) COLLATE utf8mb4_unicode_ci NOT NULL`                              | |
 | `latitude`      | `decimal(10,8) NOT NULL`                                                   | |
 | `longitude`     | `decimal(11,8) NOT NULL`                                                   | |
 | `created_at`    | `timestamp NOT NULL DEFAULT '2014-01-01 06:31:01'`                         | |
 | `updated_at`    | `timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP` | |
 | `flag`          | `tinyint(1) NOT NULL DEFAULT '1'`                                          | |
-| `wikiDataId`    | `varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL                      | |
+| `wikiDataId`    | `varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL`                      | |
 
